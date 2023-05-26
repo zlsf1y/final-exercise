@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftGrass</title>
+</head>
+
+
+<body>
+    <div id="section">
+        <div id="all" data-relative-input="true" data-scalar-x="3" data-scalar-y="3">
+
+            <div id="background" data-depth="0.4">
+                <img src="./picture/cao.png" class="background">
+            </div>
+            <div id ="title">
+                <img src="./picture/SOFTGRASS_画板 1.png" class="title">
+            </div>
+
+            <div id="a1" data-depth="0.1"  calibrate-x="false" calibrate-y="false">
+                <img src="./picture/图标f1_画板 1.svg" class="img1">
+            </div>
+            <div id="a2" data-depth="0.2" >
+                <img src="./picture/图标f5-05.svg" class="img2">
+            </div>
+            <div id="a3" data-depth="0.3" >
+                <img src="./picture/图标f6-06.svg" class="img3">
+            </div>
+            <div id="a4" data-depth="0.1" >
+                <img src="./picture/图标f2-02.svg" class="img4">
+            </div>
+            <div id="a5" data-depth="0.2">
+                <img src="./picture/图标f3-03.svg" class="img5">
+            </div>
+            <div id="a6" data-depth="0.1">
+                <img src="./picture/图标f4-04.svg" class="img6">
+            </div>
+        </div> 
+
+            
+       
+        
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    let img1 = document.getElementById('a1')
+    let img2 = document.getElementById('a2')
+    let img3 = document.getElementById('a3')
+    let img4 = document.getElementById('a4')
+    let img5 = document.getElementById('a5')
+    let img6 = document.getElementById('a6')
+    let title = document.getElementById('title')
+
+    let all = document.getElementById('all')
+    let parallaxInstanceBg = new Parallax(all)
+    parallaxInstanceBg.calibrate()
+    img1.style.left = '200px'
+    img1.style.top = '400px'
+    img2.style.left = '500px'
+    img2.style.top = '530px'
+    img3.style.left = '1070px'
+    img3.style.top = '600px'
+    img4.style.top = '400px'
+    img4.style.left = '790px'
+    img5.style.top = '330px'
+    img5.style.left = '1200px'
+    img5.style.top = '350px'
+    img5.style.left = '1200px'
+    img6.style.top = '630px'
+    img6.style.left = '100px'
+    title.style.top = '100px'
+    title.style.left = '180px'
+
+
+
+</script>
+
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #000000;
+    min-height: 100vh;
+}
+#section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+    left: -20px;
+    width: 120vw;
+    height: 104vh;
+}
+#title{
+    width: 100px;
+    object-fit: cover;
+}
+.img1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 100;
+}
+.img2{
+    left: 200px;
+    top: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 100;
+}
+.img3{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 100;
+}
+.img4{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 100;
+}
+.img5{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 100;
+}
+.img6{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 100;
+}
+.title{
+    width: 1100px;
+    object-fit: cover;
+}
+</style>
+</html>
